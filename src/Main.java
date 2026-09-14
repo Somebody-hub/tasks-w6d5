@@ -19,6 +19,6 @@ public class Main {
         employeeService.addEmployee(new Developer(2, "Bob", 110.0, "C++"));
         employeeService.addEmployee(new Manager(3, "Sam", 70.0, 100.0));
         employeeService.addEmployee(new Manager(4, "Rayon", 80.0, 50.0));
-        System.out.println(employeeService.getEmpById(2));
+        System.out.println(employeeService.getEmpById(2).getName());
     }
 }
