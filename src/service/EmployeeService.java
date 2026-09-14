@@ -2,8 +2,7 @@ package service;
 
 import model.Employee;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class EmployeeService <T extends Employee> {
     private final Map<Integer, T> allEmployee = new HashMap<>();
@@ -15,4 +14,5 @@ public class EmployeeService <T extends Employee> {
     public T getEmpById(int id){
         return allEmployee.get(id);
     }
+
 }
