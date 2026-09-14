@@ -10,7 +10,7 @@ public class Main {
         itemService.addItem(new Weapon("Iron Sword", ItemType.SWORD, 3.2, 85.0, 35));
         itemService.addItem(new Armor("Wooden Shield", ItemType.SHIELD, 4.5, 20.0, 18));
         itemService.addItem(new Armor("Wooden Shield", ItemType.SHIELD, 4.5, 20.0, 18));
-        System.out.println(itemService.filterByPrice());
+        System.out.println(itemService.sortByPrice());
         System.out.println(itemService.findMinWeightItem());
         System.out.println(itemService.typesItems());
         System.out.println();

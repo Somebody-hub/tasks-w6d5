@@ -12,7 +12,7 @@ public class ItemService<T extends Item> {
         itemsList.add(item);
     }
 
-    public List<T> filterByPrice () {
+    public List<T> sortByPrice() {
         List<T> sortedList = new ArrayList<>(itemsList);
         sortedList.sort(Comparator.comparingDouble(Item::getPrice));
         return sortedList;
