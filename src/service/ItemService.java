@@ -6,7 +6,7 @@ import model.ItemType;
 import java.util.*;
 
 public class ItemService<T extends Item> {
-    private List<T> itemsList = new ArrayList<>();
+    private final List<T> itemsList = new ArrayList<>();
 
     public void addItem(T item){
         itemsList.add(item);
@@ -28,9 +28,6 @@ public class ItemService<T extends Item> {
 
     public Set<ItemType> typesItems() {
         Set<ItemType> typesSet = new HashSet<>();
-        if (itemsList == null) {
-            return typesSet;
-        }
         for (T item: itemsList){
             typesSet.add(item.getItemType());
         }
